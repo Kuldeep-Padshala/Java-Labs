@@ -63,23 +63,30 @@ public class a4_Bank {
         Scanner sc = new Scanner(System.in);
         Bank_Account account = new Bank_Account(0, "", "", "", 0.0);
         account.getAccountDetails();
-        System.out.print("Enter 1 to deposit, 2 to withdraw, 3 to view account info: ");
-        int choice = sc.nextInt();
-        if(choice == 1) {
-            System.out.print("Enter amount to deposit: ");
-            double amount = sc.nextDouble();
-            account.deposit(amount);
+        while(true) {
+            System.out.print("Enter 1 to deposit, 2 to withdraw, 3 to view account info:, -1 to exit: ");
+            int choice = sc.nextInt();
+    
+            if(choice == 1) {
+                System.out.print("Enter amount to deposit: ");
+                double amount = sc.nextDouble();
+                account.deposit(amount);
+            }
+            else if(choice == 2) {
+                System.out.print("Enter amount to withdraw: ");
+                double amount = sc.nextDouble();
+                account.withdraw(amount);
+            }
+            else if(choice == 3) {
+                account.displayAccountDetails();
+            }
+            else if(choice == -1) {
+                break;
+            }
+            else {
+                System.out.println("Invalid Choice!");
+            }
         }
-        else if(choice == 2) {
-            System.out.print("Enter amount to withdraw: ");
-            double amount = sc.nextDouble();
-            account.withdraw(amount);
-        }
-        else if(choice == 3) {
-            account.displayAccountDetails();
-        }
-        else {
-            System.out.println("Invalid Choice!");
-        }
+       
     }
 }
