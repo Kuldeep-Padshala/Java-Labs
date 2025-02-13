@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
 class Bank_Account {
-    private int accountNumber;
-    private String accountHolderName;
-    private String accountType;
-    private String branch;
-    private double balance;
+
+    private
+    int accountNumber;
+    String accountHolderName;
+    String accountType;
+    String branch;
+    double balance;
 
     public Bank_Account( int accountNumber, String accountHolderName, String accountType, String branch, double balance) {
         this.accountNumber = accountNumber;
