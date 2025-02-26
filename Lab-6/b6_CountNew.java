@@ -17,12 +17,6 @@ class ObjCount {
 
 public class b6_CountNew {
     public static void main(String[] args) {
-        // // @SuppressWarnings("unused")
-        // ObjCount obj1 = new ObjCount();
-        // // @SuppressWarnings("unused")
-        // ObjCount obj2 = new ObjCount();
-        // // @SuppressWarnings("unused")
-        // ObjCount obj3 = new ObjCount();
         
         System.out.println("Number of objects created: " + ObjCount.getCount());
     }
