@@ -15,7 +15,7 @@ class Circle{
 public class a1_CircleArea{
 	public static void main(String[] args){
 
-		@SuppressWarnings("resource")
+
 		Scanner sc=new Scanner(System.in);
 
 		System.out.print("Enter radius: ");
@@ -25,5 +25,6 @@ public class a1_CircleArea{
 		// c1.Circle(sc.nextInt());
 
 		System.out.print("Area is "+c1.findArea());
+		sc.close();
 	}
 };

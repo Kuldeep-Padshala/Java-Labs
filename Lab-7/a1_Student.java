@@ -22,7 +22,7 @@ class Student {
 
     public void inputDetails() {
 
-//        @SuppressWarnings("resource")
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter ID No: ");
